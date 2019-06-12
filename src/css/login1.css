@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*html{height:1%; }*/
+
+body {
+    background: none;
+    background-color: white;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #515151;
+    margin: 0;
+    padding: 0;
+}
+
+body input,
+body textarea {
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    background-color: white;
+    outline: none;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+form,
+label,
+input,
+textarea,
+img,
+span,
+dl,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+a {
+    color: #515151;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    -moz-outline: none;
+}
+
+
+
+a.fullBtnBlue:hover {
+    background-color: #2b8cc5;
+    color: #fff;
+}
+
+a.fullBtnBlue {
+    width: 300px;
+    display: block;
+    height: 46px;
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 10px;
+    *margin-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: #32a5e7;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+
+input.emptyInput {
+    color: #909090;
+}
+
+.normalInput {
+    width: 276px;
+    position: relative;
+    padding: 0px 10px;
+    height: 46px;
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 26px;
+    border: 1px solid #dadada;
+    outline: none;
+    color: #474747;
+    zoom: 1;
+    overflow: hidden;
+    *line-height: 50px;
+}
+
+
+
+.normalInput input {
+    font-size: 14px;
+    width: 94%;
+    height: 46px;
+    *height: 34px;
+    line-height: 22px;
+    *line-height: 50px;
+    line-height: 0px;
+    line-height: 50px\0;
+}
+
+.normalInput .kapkey {
+    *line-height: 50px !important;
+}
+
+span.inputTip {
+    position: absolute;
+    top: 13px;
+    /**top: 0px;*/
+    left: 10px;
+    color: #909090;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.banner-box:before {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(src\img\images\火狐截图_2019-06-10T02-32-37_02.png) no-repeat center;
+    background-color: #EDF9FB;
+}
