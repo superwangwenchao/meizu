@@ -11,7 +11,7 @@
     <title>魅族 16th-魅族商城</title>
     <link rel="stylesheet" href="css/details.css">
     <link rel="stylesheet" href="css/details2.css">
-    <link rel="stylesheet" href="css/details1.css">
+ <link rel="stylesheet" href="css/details1.css">
 </head>
 
 <body>
@@ -699,27 +699,37 @@
         </div>
     </div>
 
+     <div class="magnifying_glass">
+        
+         <div class="magnifypic">
+             <img src="https://openfile.meizu.com/group1/M00/07/2C/Cgbj0Vy9czeAB1b0AAbEyeUfNvI853.png680x680.jpg" alt="bigpic">
+         </div>
+    </div>
+   
+
+
     <!-- 商品详情 -->
     <section class="row container" style="position: absolute;top:150px;">
         <div class="preview" id="preview">
             <div class="preview-booth">
+                <div class="shrink1" > </div>
                 <a href="javascript:;" id="J_imgBooth">
                     <img src="https://openfile.meizu.com/group1/M00/07/2C/Cgbj0Vy9czeAB1b0AAbEyeUfNvI853.png680x680.jpg"
                         height="560" width="560" alt="">
                 </a>
             </div>
             <ul class="preview-thumb clearfix" id="J_previewThumb">
-                <li class="current"><a data-mtype="click_store_de_tp_1" data-bh="click_store_de_tp_1" href="#"><img
-                            src="https://openfile.meizu.com/group1/M00/07/2C/Cgbj0Vy9czeAB1b0AAbEyeUfNvI853.png120x120.jpg"
+                <li class="current"><img
+                            src="https://openfile.meizu.com/group1/M00/07/2C/Cgbj0Vy9czeAB1b0AAbEyeUfNvI853.png680x680.jpg"
                             width="80" height="80"></a></li>
-                <li><a data-mtype="click_store_de_tp_2" data-bh="click_store_de_tp_2" href="#"><img
-                            src="https://openfile.meizu.com/group1/M00/07/14/Cgbj0Fy9cyCAFTiJAALUkAwtnM0798.png120x120.jpg"
+                <li class="current"><img
+                            src="https://openfile.meizu.com/group1/M00/07/14/Cgbj0Fy9cyCAFTiJAALUkAwtnM0798.png680x680.jpg"
                             width="80" height="80"></a></li>
-                <li><a data-mtype="click_store_de_tp_3" data-bh="click_store_de_tp_3" href="#"><img
-                            src="https://openfile.meizu.com/group1/M00/07/14/Cgbj0Fy9cyiAapmYAAPdKnA-Nq4341.png120x120.jpg"
+                <li class="current"><img
+                            src="https://openfile.meizu.com/group1/M00/07/14/Cgbj0Fy9cyiAapmYAAPdKnA-Nq4341.png680x680.jpg"
                             width="80" height="80"></a></li>
-                <li><a data-mtype="click_store_de_tp_4" data-bh="click_store_de_tp_4" href="#"><img
-                            src="https://openfile.meizu.com/group1/M00/07/2C/Cgbj0Vy9cy-AQHw_AAItbvBkEag325.png120x120.jpg"
+                <li class="current"><img
+                            src="https://openfile.meizu.com/group1/M00/07/2C/Cgbj0Vy9cy-AQHw_AAItbvBkEag325.png680x680.jpg"
                             width="80" height="80"></a></li>
             </ul>
           
@@ -1004,6 +1014,25 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 <script src="script/js/details.js"></script>
+
+<script>
+    var  div = document.querySelector('div')
+    function taobao(data){
+        //console.log(data);
+        for(var i = 0;i<(data.result.length); i++){
+            // var a = JSON.parse()
+            console.log(data.result[i])
+
+        }
+    }
+   // taobao();
+</script>
+<script>
+        var input =document.querySelector('input')
+        var dc = document.createElement('script')
+         dc.src="https://suggest.taobao.com/sug?code=utf-8&q=qq+&_ksTS=1560429078686_349&callback=taobao";
+         document.body.appendChild(dc)
+</script>
 </body>
 
 </html>

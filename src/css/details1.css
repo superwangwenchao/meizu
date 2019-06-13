@@ -1,5 +1,40 @@
-#J_fastNav{
-    position: relative;
-    top: 80px;
-    
+section{
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto; 
 }
+
+/* 小放大镜 shrink */
+#preview .preview-booth .shrink1{
+    display: none;
+    width: 50px;
+    height:50px;
+    border:1px solid red;
+    opacity: 0.5;
+    background: coral;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 大放大镜 magnifying */
+.magnifying_glass{
+    width: 600px;
+    height: 600px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    z-index: 100;
+    overflow: hidden;
+    border-radius: 10%;
+    display: block;
+}
+
+.magnifypic img{
+    position: absolute;
+    width: 1000px;
+}
+
+
